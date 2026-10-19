@@ -17,7 +17,7 @@ export const HARDWARE_CATALOG: Record<HardwareSlideProfile['id'], HardwareSlideP
   gtv_meridian: {
     id: 'gtv_meridian',
     brand: 'GTV',
-    model: 'МЕРИДИАН (Meridian) Ball-Bearing Soft-Close',
+    model: 'Meridian 45mm Soft-Close',
     nominalLengths: [300, 350, 400, 450, 500, 550],
     railHeightMm: 45,
     sideClearanceMm: 12.7,
@@ -28,7 +28,7 @@ export const HARDWARE_CATALOG: Record<HardwareSlideProfile['id'], HardwareSlideP
   blum_tandem: {
     id: 'blum_tandem',
     brand: 'Blum',
-    model: 'TANDEM Plus Blumotion 560H',
+    model: 'Tandem Plus 560H',
     nominalLengths: [350, 400, 450, 500, 550],
     railHeightMm: 44,
     sideClearanceMm: 13.0,
@@ -39,7 +39,7 @@ export const HARDWARE_CATALOG: Record<HardwareSlideProfile['id'], HardwareSlideP
   hettich_quadro: {
     id: 'hettich_quadro',
     brand: 'Hettich',
-    model: 'Quadro V6 Silent System',
+    model: 'Quadro V6 Silent',
     nominalLengths: [350, 400, 450, 500, 550],
     railHeightMm: 45,
     sideClearanceMm: 12.5,
