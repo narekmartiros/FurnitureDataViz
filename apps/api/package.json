@@ -1,0 +1,21 @@
+{
+  "name": "@furniture-dataviz/api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@furniture-dataviz/parametric-engine": "workspace:*",
+    "@prisma/client": "^6.1.0",
+    "fastify": "^5.1.0",
+    "@fastify/cors": "^10.0.1",
+    "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

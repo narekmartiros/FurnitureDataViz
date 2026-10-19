@@ -1,0 +1,32 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id                 String           @id @default(cuid())
+  email              String           @unique
+  name               String?
+  avatarUrl          String?
+  googleAccessToken  String?
+  googleRefreshToken String?
+  projects           CabinetProject[]
+  createdAt          DateTime         @default(now())
+}
+
+model CabinetProject {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id])
+  name            String
+  spreadsheetId   String
+  sheetTabName    String   @default("Sheet20")
+  topologyType    String   @default("CABINET_CARGO_PULLOUT")
+  schemaMapping   Json
+  railingConfig   Json
+  updatedAt       DateTime @updatedAt
+}

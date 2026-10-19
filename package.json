@@ -1,0 +1,24 @@
+{
+  "name": "furniture-dataviz-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FurnitureDataViz (SheetCraft3D) — Universal Google Sheets Parametric 3D Cabinet, Table, Cut-List & Railing Studio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/narekmartiros/FurnitureDataViz.git"
+  },
+  "author": "Narek Martirosyan (@narekmartiros)",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "db:push": "pnpm --filter @furniture-dataviz/api prisma db push"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
